@@ -1,0 +1,18 @@
+# assets
+assets:
+
+    enabled: true
+    
+    # should a version be appended
+    appendVersion: true
+
+    # version parameter name
+    versionParameter: v
+
+    # version number to append to querystrings
+    version: v1.0
+
+    # templates to parse asset paths from
+    paths:
+        - demo-bundle:layout.jade
+        - demo-bundle:chat/index.jade

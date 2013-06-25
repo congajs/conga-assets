@@ -1,0 +1,19 @@
+parameters:
+
+    assets.listener.constructor: conga-assets:assets
+    assets.template.helper.assets.constructor: conga-assets:helper/assets
+
+services:
+
+    # the assets kernel listener
+    assets.listener:
+        constructor: %assets.listener.constructor%
+        tags:
+            - { name: app.middleware, method: onAddMiddleware, priority: 1024 }
+
+    # the template helpers
+    assets.template.helper.assets:
+        constructor: %assets.template.helper.assets.constructor%
+        arguments: ['@service_container']
+        tags:
+            - { name: template.helper }
