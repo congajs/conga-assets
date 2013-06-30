@@ -14,5 +14,4 @@ assets:
 
     # templates to parse asset paths from
     paths:
-        - demo-bundle:layout.jade
-        - demo-bundle:chat/index.jade
+        # - demo-bundle:layout.jade
