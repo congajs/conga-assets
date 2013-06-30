@@ -19,8 +19,7 @@
   "author": "Marc Roulias",
   "license": "MIT",
   "dependencies": {
-    "connect-assetmanager": "0.0.28",
-    "wrench": "1.5.1"
+    "connect-assetmanager": "0.0.28"
   },
   "devDependencies": {
 
