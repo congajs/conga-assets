@@ -17,6 +17,12 @@
 
   ],
   "author": "Marc Roulias",
+  "contributors": [
+		{
+			"name": "Anthony Matarazzo" ,
+			"email": "email@anthonymatarazzo.com"
+		}
+  ],
   "license": "MIT",
   "dependencies": {
     "connect-assetmanager": "0.0.28"
