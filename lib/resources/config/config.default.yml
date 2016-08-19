@@ -4,7 +4,7 @@ assets:
     enabled: true
 
     # regular expression pattern to parse assets tags
-    tagPattern: assets\\((.*)\\)
+    tagPattern: "assets\\((.*)\\)"
     
     # should a version be appended
     appendVersion: true
