@@ -21,15 +21,32 @@ Example:
         
         # should a version be appended
         appendVersion: true
-
+        
         # version parameter name (/js/src.js?v=1234)
         versionParameter: v
-
+        
         # version number to append to querystrings
         version: v1.0
-
+        
+        # custom defined tags and asset paths
+        tags:
+            js-plugins:
+                type: javascript
+                path: %kernel.app_public_path%
+                route: /js/conga.plugin.js
+                files:
+                    - /bundles/conga-socketio/js/conga-socketio.js
+            
+            css-all:
+                type: css
+                path: %kernel.app_public_path%
+                route: /css/all.css
+                files:
+                    - /js/lib/bootstrap/dist/css/bootstrap.css
+                    - /bundles/demo-bundle/css/styles.css
+        
         # templates to parse asset paths from
-        paths:
+        templates:
             - demo-bundle:layout.jade
             - demo-bundle:chat/index.jade
 
