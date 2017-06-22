@@ -1,6 +1,6 @@
 {
   "name": "conga-assets",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Conga.js bundle for asset merging and minfication using connect-assetmanager",
   "directories": {
     "test": "test"
